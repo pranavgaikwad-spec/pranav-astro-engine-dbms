@@ -1,0 +1,23 @@
+digraph Astroverse_Architecture {
+
+rankdir=TB;
+
+node [shape=box, style=rounded];
+
+USER -> "Birth Data Input";
+
+"Birth Data Input" -> "Astroverse Database";
+
+"Astroverse Database" -> "Kundli Engine";
+
+"Kundli Engine" -> "Planet Analysis";
+
+"Planet Analysis" -> "Prediction Engine";
+
+"Prediction Engine" -> "Prediction Reports";
+
+"Planet Analysis" -> "Remedies Knowledge";
+
+"Remedies Knowledge" -> "Final User Report";
+
+}
